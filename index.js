@@ -13,8 +13,8 @@ const BMI = await inquirer.prompt([
         message: `${chalk.whiteBright.italic `Enter your Weight in Kg:`}`,
     },
 ]);
-let height = BMI.weight / (BMI.height / 100) ** 2;
-console.log(`${chalk.gray.bold `Your BMI is ${height}`}`);
+let result = BMI.weight / Math.round(BMI.height / 100) ** 2;
+console.log(`${chalk.blueBright.italic `Your BMI is ${result}`}`);
 if (BMI.height <= 0) {
     console.log(`${chalk.blue.italic `Please enter your height in a valid number.`}`);
 }

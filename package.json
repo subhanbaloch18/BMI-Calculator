@@ -1,6 +1,6 @@
 {
-  "name": "bmi-calculator",
-  "version": "1.0.0",
+  "name": "s2bl-bmi-calculator",
+  "version": "5.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
